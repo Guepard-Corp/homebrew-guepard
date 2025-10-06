@@ -1,26 +1,30 @@
 class Guepard < Formula
-  desc "Guepard CLI - Git for Data"
+  desc "Guepard CLI (guepard) - Git, but for Data"
   homepage "https://www.guepard.run"
-  url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v0.26.19/guepard-cli-v0.26.19-macos-arm64.tar.gz"
-  version "0.26.19"
-  sha256 "0fad9015e7c702a27431a630bbe957664ad484bfad7d82321e8ba9d69c8defb2"
+  url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v\${VERSION}/guepard-cli-v\${VERSION}-macos-arm64.tar.gz"
+  version "\${VERSION}"
+  sha256 "ce2f2b086481989ad759ae094cf0b4591b130372f0bb8ca38049ac97ca413d8b"
   license "Guepard (c) 2025"
 
   on_macos do
+    on_arm do
+      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v\${VERSION}/guepard-cli-v\${VERSION}-macos-arm64.tar.gz"
+      sha256 "ce2f2b086481989ad759ae094cf0b4591b130372f0bb8ca38049ac97ca413d8b"
+    end
     on_intel do
-      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v0.26.19/guepard-cli-v0.26.19-macos-amd64.tar.gz"
-      sha256 "e51583ea6966e4a4c7f4af92a798b547186dfcd1b397a8dde6ae0166d3d6cba7"
+      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v\${VERSION}/guepard-cli-v\${VERSION}-macos-amd64.tar.gz"
+      sha256 "7ff94b1d73a8c07b1e4fc9ab9da5f369bcc31bbad6beb2c9db0cb1376e907a4d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v0.26.19/guepard-cli-v0.26.19-linux-arm64.tar.gz"
-      sha256 "3589a31cee62813cb76b530884dde3ab99570de12d1fa255a498cabbaf945fe3"
+      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v\${VERSION}/guepard-cli-v\${VERSION}-linux-arm64.tar.gz"
+      sha256 "255e017731747a729227d268f76196386c87cd593268aea654a023d3cc78e635"
     end
     on_intel do
-      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v0.26.19/guepard-cli-v0.26.19-linux-amd64.tar.gz"
-      sha256 "bfee54d8f6ac956618c26373fd6c547b8e3d64cbe87e0185aedeb99d58749ce9"
+      url "https://github.com/Guepard-Corp/guepard-cli/releases/download/v\${VERSION}/guepard-cli-v\${VERSION}-linux-amd64.tar.gz"
+      sha256 "7ef51112d8bf4d82e3ee68d6eb360df78a1f696f149040684212a42d29a12dde"
     end
   end
 
