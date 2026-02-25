@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../guepard-mcp-server"
+		},
+		{
+			"path": "../../guepard-skills"
+		},
+		{
+			"path": "../../guepard-api-postman"
+		},
+		{
+			"path": "../../guepard-platform"
+		},
+		{
+			"path": "../../guepard-docs"
+		}
+	],
+	"settings": {}
+}
